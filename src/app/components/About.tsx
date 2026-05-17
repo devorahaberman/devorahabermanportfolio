@@ -38,7 +38,7 @@ export function About() {
     {
       icon: Heart,
       title: "Honest",
-      description: "Transparent communication and ethical design practices",
+      description: "Transparent communication and collaboration",
     },
   ];
 

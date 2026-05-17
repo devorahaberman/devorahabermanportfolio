@@ -33,7 +33,7 @@ interface Project {
 const projects: Project[] = [
   {
     id: "sammys-donation",
-    title: "Sammy's Buddy Program – Donation Experience Redesign",
+    title: "Sammy's Buddy Program - Donation Experience Redesign",
     role: "Volunteer Web Designer",
     summary:
       "I partnered with Sammy's Buddy Program through Catchafire to redesign their donation experience and later evaluate their website accessibility. I researched and integrated a modern third‑party donation platform into their Squarespace site, improving clarity, usability, and donor trust.",
@@ -64,7 +64,7 @@ const projects: Project[] = [
   },
   {
     id: "sammys-accessibility",
-    title: "Sammy's Buddy Program – Accessibility Audit",
+    title: "Sammy's Buddy Program - Accessibility Audit",
     role: "Volunteer Web Designer",
     summary:
       "I conducted a full accessibility audit, identified compliance gaps, and delivered a prioritized action plan to help the organization improve inclusivity.",
@@ -101,7 +101,7 @@ const projects: Project[] = [
   },
   {
     id: "manmade-tv",
-    title: "Man-Made TV – Business Portfolio Page Design",
+    title: "Man-Made TV - Business Portfolio Page Design",
     role: "Freelance Web Designer",
     summary:
       "I designed new portfolio pages and an About page for a motion graphics professional, transforming large volumes of media into clear, compelling layouts using Figma.",
