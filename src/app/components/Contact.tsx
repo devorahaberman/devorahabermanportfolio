@@ -54,10 +54,10 @@ export function Contact() {
                   <div>
                     <p className="font-medium text-foreground mb-1">Email</p>
                     <a
-                      href="mailto:devorahb.ortega@gmail.com"
+                      href="mailto:devorahabermandigital@gmail.com"
                       className="text-primary hover:underline transition-all"
                     >
-                      devorahb.ortega@gmail.com
+                      devorahabermandigital@gmail.com
                     </a>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ export function Contact() {
                   <div>
                     <p className="font-medium text-foreground mb-1">LinkedIn</p>
                     <a
-                      href="https://www.linkedin.com/in/devorah-nina-aberman"
+                      href="https://www.linkedin.com/in/devorahaberman/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:underline transition-all"

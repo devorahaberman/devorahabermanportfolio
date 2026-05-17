@@ -18,7 +18,7 @@ export function Footer() {
 
           <div className="flex items-center gap-6">
             <a
-              href="https://www.linkedin.com/in/devorah-nina-aberman"
+              href="https://www.linkedin.com/in/devorahaberman/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:scale-110 transition-transform duration-300"
