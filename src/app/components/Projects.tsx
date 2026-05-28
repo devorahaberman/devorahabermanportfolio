@@ -274,6 +274,14 @@ function ProjectCard({ project, index, isInView, onSelect }: ProjectCardProps) {
             className={`absolute inset-0 bg-primary/95 transition-opacity duration-300 ${
               isHovered ? "opacity-100" : "opacity-0"
             }`}
+            onClick={onSelect}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                onSelect();
+              }
+            }}
           >
             <div className="absolute inset-0 p-6 flex flex-col justify-center text-white">
               <h4 className="mb-3 text-white">Executive Summary</h4>
@@ -282,7 +290,7 @@ function ProjectCard({ project, index, isInView, onSelect }: ProjectCardProps) {
                 initial={{ opacity: 0, y: 10 }}
                 animate={isHovered ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.2 }}
-                className="mt-4 flex items-center gap-2 text-sm"
+                className="mt-4 flex items-center gap-2 text-sm cursor-pointer"
               >
                 <span>Read full case study</span>
                 <ArrowDown className="w-4 h-4 animate-bounce" />
