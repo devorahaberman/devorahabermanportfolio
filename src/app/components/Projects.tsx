@@ -261,7 +261,7 @@ function ProjectCard({ project, index, isInView, onSelect }: ProjectCardProps) {
       onMouseLeave={() => setIsHovered(false)}
       className="relative"
     >
-      <Card className="overflow-hidden border-border hover:shadow-xl transition-shadow duration-300 cursor-pointer group">
+      <Card className="overflow-hidden border-border hover:shadow-xl transition-shadow duration-300 cursor-pointer group h-full">
         <div className="relative h-64 overflow-hidden">
           <img
             src={project.image}
@@ -288,12 +288,14 @@ function ProjectCard({ project, index, isInView, onSelect }: ProjectCardProps) {
             </div>
           </div>
         </div>
-        <div className="p-6">
-          <h3 className="mb-2 line-clamp-2">{project.title}</h3>
-          <p className="text-sm text-muted-foreground mb-4">{project.role}</p>
-          <p className="text-sm text-muted-foreground mb-4">
-            <span className="font-medium text-foreground">Tools:</span> {project.tools}
-          </p>
+        <div className="p-6 flex flex-col gap-4 overflow-hidden">
+          <div className="space-y-4 overflow-y-auto max-h-[18rem] pr-1">
+            <h3 className="mb-2 line-clamp-2">{project.title}</h3>
+            <p className="text-sm text-muted-foreground mb-4">{project.role}</p>
+            <p className="text-sm text-muted-foreground mb-4">
+              <span className="font-medium text-foreground">Tools:</span> {project.tools}
+            </p>
+          </div>
           <Button
             onClick={onSelect}
             variant="outline"
